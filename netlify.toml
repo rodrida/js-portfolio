@@ -1,0 +1,8 @@
+En este archivo preparamos lo necesario para poder tener el envio de la información hacia nuestro
+repositorio en GitHub y posteriormente conectarlo con un hud a lo que es Netlify para que los despliegues
+sean automáticos.
+
+Creamos nuestra configuración que nos va a decir el build que vamos a ejecutar.
+[build]
+    publish = "dist"
+    command = "npm run build"
