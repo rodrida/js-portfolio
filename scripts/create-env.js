@@ -16,3 +16,6 @@ fs.writeFileSync('./.env', `API=${process.env.API}\n`);
 
 // Adicionalmente tenemos que ejecutar este script antes del build, por lo tanto, modificamos el script build
 // en el archivo package.json de una manera anidada.
+
+// En Netlify ya no debemos hacer nada, automáticamente va a escuchar los cambios en este repositorio en 
+// GitHub. 
