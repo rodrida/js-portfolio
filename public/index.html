@@ -5,13 +5,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../src/styles/main.css">
+
+  <!-- NOTA: Cuando utilizamos webpack, ya no es necesario la etiqueta link a nuestro archivo main.css -->
+  <!-- webpack cuando empaquete nuestro proyecto consumira el archivo main.css dentro de la carpeta dist que contiene el código css optimizado. -->
+
+  <!-- <link rel="stylesheet" href="../src/styles/main.css"> -->
   <title>JS Portfolio</title>
 </head>
 
 <body>
   <div id="main"></div>
-  <script type="module" src="../src//index.js"></script>
+
+  <!-- NOTA: Cuando utilizamos webpack, ya no es necesario la etiqueta script en nuestro archivo index.html -->
+  <!-- webpack cuando empaquete nuestro proyecto consumira el archivo main.js dentro de la carpeta dist que contiene el código js optimizado. -->
+
+  <!-- <script type="module" src="../src//index.js"></script> -->
 </body>
 
 </html>

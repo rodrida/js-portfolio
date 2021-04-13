@@ -1,4 +1,8 @@
-import getData from '../utils/getData.js';
+import getData from '@utils/getData.js';
+// podemos importar los recursos de type que son imágenes .png
+import github from '@images/github.png';
+import twitter from '@images/twitter.png';
+import instagram from '@images/instagram.png';
 
 const Template = async () => {
   const data = await getData();
@@ -24,18 +28,24 @@ const Template = async () => {
         </div>
         <div class="card_social">
           <a href="https://twitter.com/gndx">
-            <img src="../src/assets/images/twitter.png" />
+            <img src="${twitter}" />
           </a>
           <a href="https://github.com/gndx">
-            <img src="../src/assets/images/github.png" />
+            <img src="${github}" />
           </a>
           <a href="https://instagram.com/gndx">
-            <img src="../src/assets/images/instagram.png" />
+            <img src="${instagram}" />
           </a>
         </div>
       </div>
     </div>
   `;
+
+  // NOTA: Debemos modificar la fuente de las imágenes que consume la etiqueta img, establecemos la ruta
+  // que definimos en el archivo webpack.config.js -> to: 'assets/images'
+  // pero, si utilizamos las buenas prácticas, lo anterior basta con establecer la variable que 
+  // definimos al inicio de este archivo en el import.
+
   return view;
 };
 

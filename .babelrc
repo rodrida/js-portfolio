@@ -1,0 +1,13 @@
+// NOTA: El . al inicio del nombre de un archivo, indica que será un archivo oculto.
+// este es el archivo de la configuración de Babel
+// creamos un objeto donde definiremos las configuraciones que acabamos de agregar (dependencias de desarrollo)
+{
+    "presets": [
+        "@babel/preset-env"
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime"
+    ]
+}
+// ahora añadimos esta configuración de Babel a webpack, para que entienda que trabajara directamente 
+// con estos recursos

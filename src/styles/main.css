@@ -1,4 +1,17 @@
-@import "https://fonts.googleapis.com/css?family=Ubuntu:300,400,500";
+/* @import "https://fonts.googleapis.com/css?family=Ubuntu:300,400,500"; */
+
+/* NOTA: Para hacer más eficiente la parte de las fuentes, vamos a descargar nuestra fuente  */
+/* (que se encuentrá en la carpeta fonts con las diferentes opciones de la fuente) para que este */
+/* disponible de forma local y así nos permita optimización. */
+
+/* añadimos la lógica de las fonts que vamos a utilizar y ya no se requiere el import del inicio */
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../assets/fonts/ubuntu-regular.woff2') format('woff2'),
+		url('../assets/fonts/ubuntu-regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
 
 html {
 	font-family: sans-serif;
